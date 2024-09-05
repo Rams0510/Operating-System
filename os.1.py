@@ -1,4 +1,4 @@
-"""FCFS(first come first serve)Scheduling Algorithm(1 sec 1 page)
+#FCFS(first come first serve)Scheduling Algorithm(1 sec 1 page)
 def FCFS(jobs):
     current_time=0
     total_time=0
@@ -33,7 +33,7 @@ execution_time=[3,5,7,4]
 result=cal_tot_time(execution_time)
 print(f"The total time required to complete all tasks is: {result} hours")
 
-Round Robin Scheduling Algorithm
+#Round Robin Scheduling Algorithm
 from collections import deque
 def calculate_total_time(orders, time_quantum):
     queue =deque(orders)
@@ -50,8 +50,9 @@ def calculate_total_time(orders, time_quantum):
 orders = [5, 3, 8, 6]
 time_quantum = 4
 total_time = calculate_total_time(orders, time_quantum)
-print(f"The total time required to complete all orders is: {total_time} minutes")"""
+print(f"The total time required to complete all orders is: {total_time} minutes")
 
+# Priority Scheduling algorithm
 from queue import PriorityQueue
 def calculate_total_time(patients):
     pq = PriorityQueue()
